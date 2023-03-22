@@ -21,9 +21,9 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    .gal:hover{ 
-    opacity: 0.7;
-     }
+    .gal:hover{ opacity: 0.7; cursor: pointer; transform: (1.2); }
+    .see-all:hover{ background-color: rgb(184, 175, 175); color: white; }
+    #seee-all:hover {color: white; }
   </style>
 </head>
 <body width="1440px" class="">
@@ -39,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav  " style="font-size: 12.5px;">
             <li class="nav-item">
-              <a class="nav-link active  text-light " aria-current="page" href="#">About</a>
+              <a class="nav-link active  text-light line " aria-current="page" href="#">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link  text-light" href="#">Careers</a>
@@ -48,13 +48,13 @@
               <a class="nav-link  text-light" href="#">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled  text-light">Events</a>
+              <a class="nav-link  text-light" href="#">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled  text-light">Products</a>
+              <a class="nav-link  text-light" href="#">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled  text-light">Support</a>
+              <a class="nav-link  text-light" href="#">Support</a>
             </li>
           </ul>
           </div>
@@ -101,16 +101,11 @@
       
     <div class="pb-0" style=" padding-top: 9rem; padding-left: 7.8rem; padding-right: 8.9rem; white-space: nowrap;">
       
-      <span><h4 class="text-uppercase pb-3 lh-1" style="display: inline; font-size: 2.0rem;  font-family: 'Josefin Sans', sans-serif;">OUR CREATIONS</h4></span>   <span style="text-align: center; float: right;" > <a href="" class="text-decoration-none  "  style="text-align: center; font-size: 0.71rem; border: 1px solid black; padding: 0.1rem 1.4rem; text-decoration: none; color: black;">SEE ALL</a> </span>
+      <span><h4 class="text-uppercase pb-3 lh-1" style="display: inline; font-size: 2.0rem;  font-family: 'Josefin Sans', sans-serif;">OUR CREATIONS</h4></span>   <span see-all-a style="text-align: center; float: right;" > <a href="" class="text-decoration-none see-all " id="seee-all" style="text-align: center; font-size: 0.71rem; border: 1px solid black; padding: 0.1rem 1.4rem; text-decoration: none; color: black;">SEE ALL</a> </span>
 
      
     </div>
-
-  
-
-      
     
-     
   </div>
 
 
@@ -128,7 +123,7 @@
       </div>
       <div class="col">
         <div class="card h-100 bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
-          <img src="images/desktop/image-night-arcade.jpg" class="card-img-top w-100" alt="...">
+          <img src="images/desktop/image-night-arcade.jpg" style="transition: transform 0.3s ease-in-out;" class="gal card-img-top w-100" alt="...">
           <a href="#!">
             <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
           </a>
@@ -138,7 +133,7 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="images/desktop/image-soccer-team.jpg" class="card-img-top" alt="...">
+          <img src="images/desktop/image-soccer-team.jpg" class="gal card-img-top" alt="...">
           
             <h5 class="text-uppercase" style="color: rgba(255, 255, 255, 0.771); margin-top: 145%; margin-left: 10%; padding-left: 2%; font-weight: 100; position:absolute;">Soccer <br> team VR</h5>
           
@@ -146,7 +141,7 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="images/desktop/image-grid.jpg" class="card-img-top" alt="...">
+          <img src="images/desktop/image-grid.jpg" class="gal card-img-top" alt="...">
           
             <h5 class="text-uppercase" style="color: rgba(255, 255, 255, 0.771); margin-top: 145%; margin-left: 10%; padding-left: 2%; font-weight: 100; position:absolute;">The <br> grid</h5>
           
@@ -154,7 +149,7 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="images/desktop/image-from-above.jpg" class="card-img-top" alt="...">
+          <img src="images/desktop/image-from-above.jpg" class="gal card-img-top" alt="...">
           
             <h5 class="text-uppercase" style="color: rgba(255, 255, 255, 0.771); margin-top: 145%; margin-left: 10%; padding-left: 2%; font-weight: 100; position:absolute;"> From up <br> above VR</h5>
           
@@ -162,7 +157,7 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="images/desktop/image-pocket-borealis.jpg" class="card-img-top" alt="...">
+          <img src="images/desktop/image-pocket-borealis.jpg" class="gal card-img-top" alt="...">
           
             <h5 class="text-uppercase" style="color: rgba(255, 255, 255, 0.771); margin-top: 145%; margin-left: 10%; padding-left: 2%; font-weight: 100; position:absolute;">Pocket <br> borealis</h5>
           
@@ -170,7 +165,7 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="images/desktop/image-curiosity.jpg" class="card-img-top" alt="...">
+          <img src="images/desktop/image-curiosity.jpg" class="gal card-img-top" alt="...">
           
             <h5 class="text-uppercase" style="color: rgba(255, 255, 255, 0.771); margin-top: 145%; margin-left: 10%; padding-left: 2%; font-weight: 100; position:absolute;">The <br> curiosity</h5>
           
@@ -178,7 +173,7 @@
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="images/desktop/image-fisheye.jpg" class="card-img-top" alt="...">
+          <img src="images/desktop/image-fisheye.jpg" class="gal card-img-top" alt="...">
           
             <h5 class="text-uppercase" style="color: rgba(255, 255, 255, 0.771); margin-top: 145%; margin-left: 10%; padding-left: 2%; font-weight: 100; position:absolute;">Make it <br> fisheye</h5>
           
@@ -194,9 +189,6 @@
       <div style="padding-bottom: 0.6rem; ">
        <a class="navbar-brand text-light" style="font-family: 'Alata', sans-serif;" href="#">loopstudios</a>
       </div>
-      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav  " style="font-size: 12.5px;">
           <li class="nav-item">
@@ -209,13 +201,13 @@
             <a class="nav-link  text-light" href="#">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled  text-light">Events</a>
+            <a class="nav-link  text-light" href="#">Events</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled  text-light">Products</a>
+            <a class="nav-link  text-light" href="#">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled  text-light">Support</a>
+            <a class="nav-link  text-light" href="#">Support</a>
           </li>
         </ul>
       </div>
@@ -223,10 +215,10 @@
 
     <div style="float: right;">
     <div style="white-space: nowrap; float: right;">
-      <img class="padding-left-1" style=" padding-left: 0.5rem;" src="images/icon-facebook.svg" alt="">
-      <img class="" style=" padding-left: 0.5rem;" src="images/icon-twitter.svg" alt="">
-      <img src="images/icon-pinterest.svg" style=" padding-left: 0.5rem;" alt="">
-      <img src="images/icon-instagram.svg" style=" padding-left: 0.5rem;" alt="">
+      <img class="padding-left-1" style=" padding-left: 0.5rem; cursor: pointer;" src="images/icon-facebook.svg" alt="">
+      <img class="" style=" padding-left: 0.5rem; cursor: pointer;" src="images/icon-twitter.svg" alt="">
+      <img src="images/icon-pinterest.svg" style=" padding-left: 0.5rem; cursor: pointer;" alt="">
+      <img src="images/icon-instagram.svg" style=" padding-left: 0.5rem; cursor: pointer;" alt="">
 
     </div>
     <div style="padding-top: 2.6rem; padding-bottom: 1rem;">
