@@ -21,6 +21,9 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .gal:hover{ 
+    opacity: 0.7;
+     }
   </style>
 </head>
 <body width="1440px" class="">
@@ -117,16 +120,18 @@
     <div class="row row-cols-1 row-cols-md-4 g-2 g-lg-4">
       <div class="col">
         <div class="card h-100">
-          <img src="images/desktop/image-deep-earth.jpg" class="card-img-top" alt="...">
+          <img src="images/desktop/image-deep-earth.jpg" class="gal card-img-top" alt="...">
           
             <h5 class="text-uppercase" style="color: rgba(255, 255, 255, 0.771); margin-top: 145%; margin-left: 10%; padding-left: 2%; font-weight: 100; position:absolute;">Deep <br> earth</h5>
           
         </div>
       </div>
       <div class="col">
-        <div class="card h-100">
-          <img src="images/desktop/image-night-arcade.jpg" class="card-img-top" alt="...">
-          
+        <div class="card h-100 bg-image hover-overlay ripple shadow-1-strong rounded" data-mdb-ripple-color="light">
+          <img src="images/desktop/image-night-arcade.jpg" class="card-img-top w-100" alt="...">
+          <a href="#!">
+            <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+          </a>
             <h5 class="text-uppercase" style="color: rgba(255, 255, 255, 0.771); margin-top: 145%; margin-left: 10%; padding-left: 2%; font-weight: 100; position:absolute;">Night <br> arcade </h5>
           
         </div>
@@ -182,15 +187,57 @@
 
       </div>
 
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
 </div>
+<div class="container-fluid p-0 ">
+  <nav class="navbar navbar-expand-lg bg-black " style="margin-top: 9.9%;padding-left: 7.5%; padding-top: 3%; padding-bottom: 2%; padding-right: 8.5%;" >
+    <div class="container " style="display: flex; justify-content: flex-start; align-items: flex-start;  flex-direction: column; float: left;">
+      <div style="padding-bottom: 0.6rem; ">
+       <a class="navbar-brand text-light" style="font-family: 'Alata', sans-serif;" href="#">loopstudios</a>
+      </div>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav  " style="font-size: 12.5px;">
+          <li class="nav-item">
+            <a class="nav-link active  text-light " style="padding-left: 0;" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light" href="#">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-light" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled  text-light">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled  text-light">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled  text-light">Support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
+    <div style="float: right;">
+    <div style="white-space: nowrap; float: right;">
+      <img class="padding-left-1" style=" padding-left: 0.5rem;" src="images/icon-facebook.svg" alt="">
+      <img class="" style=" padding-left: 0.5rem;" src="images/icon-twitter.svg" alt="">
+      <img src="images/icon-pinterest.svg" style=" padding-left: 0.5rem;" alt="">
+      <img src="images/icon-instagram.svg" style=" padding-left: 0.5rem;" alt="">
+
+    </div>
+    <div style="padding-top: 2.6rem; padding-bottom: 1rem;">
+      <small class="text-light" style="font-size: 0.8rem; white-space: nowrap;"> © 2021 Loopstudios. All rights reserved.</small>
+    </div>
+    </div>
+  
+  </nav>
+  </div>
+
+ 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Ayilara Richard</a>.
