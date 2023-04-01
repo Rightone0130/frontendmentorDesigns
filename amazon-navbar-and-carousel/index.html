@@ -103,7 +103,7 @@
   
     <ul class="nav justify-content-end bg-dark">
 
-      <div class="me-auto section-2-nav-item" >
+      <div class="me-auto section-2-nav-item p-0" >
     <span>
       <a class=" btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" fill="#ffffff" class="bi bi-list" viewBox="0 0 16 16">
@@ -120,7 +120,7 @@
       </div>
      
       <li class="nav-item">
-        <a class="nav-link active p-1" aria-current="page" href="#">shop deals in Electronics</a>
+        <a class="nav  p-1 mt-1 me-2" aria-current="page" href="#">Shop deals now</a>
       </li>
     </ul>
     <div>
@@ -128,14 +128,14 @@
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header bg-dark">
         <h5 class="offcanvas-title " id="offcanvasExampleLabel"><i class="bi bi-person-circle"></i> Hello,sign in</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <button type="button" class="btn-close btn-light"  style="margin-right: -15%;"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body ">
         <div>
           Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
         </div>
         <div class="dropdown mt-3">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">Digital Content & Devices
             Dropdown button
           </button>
           <ul class="dropdown-menu ">
@@ -148,7 +148,41 @@
     </div>
 
     
-  </div><!-- </section 2>  -->
+  </div><!-- </ End of section 2>  -->
+
+  <div class="carousel-section"> <!-- < Carousel Section >  -->
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/carousel/amazon slide 1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel/amazon slide 2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel/amazon slide 3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel/amazon slide 4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel/amazon slide 5.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel/amazon slide 6.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev " style="margin-bottom: 23%;  margin-left: -5%; " type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next"  style="margin-bottom: 23%;  margin-right: -5%;" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div> <!-- < End of Carousel Section >  --> 
 
 
 

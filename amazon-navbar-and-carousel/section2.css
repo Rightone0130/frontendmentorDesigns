@@ -6,9 +6,24 @@
     font-weight: 500; 
     font-family: sans-serif; 
     float: left;
-    padding-left: 5%;
+    margin-left: ;
     white-space:nowrap;
+    padding: 2.5%;
 }
+
+.section-2 a:hover{
+          
+    border-color: #fff;
+    border: 1px solid white;
+    border-radius: 0.2rem;
+    
+  }
+
+.section-2 li a{
+    font-weight: 700; 
+    font-family: sans-serif; 
+}
+
 .section-2-nav-item{
     padding-left: 1%;
     display:flex;
@@ -25,3 +40,9 @@
     font-weight: 700; 
     font-family: sans-serif; 
 }
+
+#offcanvasExampleLabel{
+    margin-left: 10%;
+}
+
+
