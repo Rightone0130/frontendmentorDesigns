@@ -7,6 +7,9 @@
  box-sizing: border-box;
 
 }
+/* html {
+    font-size: calc(25px + 0.390625vw);
+} */
 
 .container{
     width: 100vw;
@@ -18,7 +21,7 @@
 }
 .sub-container{
     width: 40vw;
-    height: 70vh;
+    min-height: 74vh;
     background-color:hsl(0, 0%, 100%);
     padding: 3%;
     border-radius: 3%;
@@ -35,12 +38,54 @@ display: flex;
 padding-bottom: 4vh;
 
 }
+.user-input span{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 input{
     height:6vh;
     width:7vw;
+    padding: 2%;
+    border:1px solid hsl(0, 0%, 86%);
+    border-radius: 9%;
+}
+input::placeholder{
+    font-weight: 800;
+    color:   hsl(0, 1%, 44%);
+    padding: 0.50rem;
+}
+
+p{
+    font-size: 0.3em;
+    font-family: sans-serif;
+    font-weight: 800;
+    line-height: 0;
+    
+}
+
+i{
+    font-size: 0.3em;
+    white-space: nowrap;
+    font-family: sans-serif;
+    line-height: 0;
 }
 
 
+
+
+
+
+hr{
+    color:hsl(0, 0%, 86%) ;
+}
+
+.month-input{
+    margin-left: 0.50rem;
+}
+.year-input{
+    margin-left: 0.50rem;
+}
 
 
 
@@ -49,24 +94,49 @@ input{
 .main-output-container{
     display: flex;
     flex-direction: column;
-    margin-top:20%;
+    margin-top:18%;
   
 }
+
+.main-output-container span{
+   white-space: nowrap;
+  
+}
+
 .main-output-container h1{
     display: inline;
-    font-weight: 900vm;
-    font-size: ;
+    /* font-weight: 900vm; */
+    /* font-size: ; */
     font-family: 'Poppins', sans-serif;
     line-height: 0;
+    position:sticky;
 
     
    
 }
 
+
+
 .output{
    color: hsl(259, 100%, 65%);
 }
 
-.send-button-container{
+.send-button-container {
     width: 11vw;
+}
+
+
+
+.send-button-container img{
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    width: 1.7em;
+    padding: 22%;
+    margin-top: 70%;
+
+}
+
+.send-button-container a{
+    width: 100%;
+    
 }
