@@ -21,9 +21,9 @@
     <div class="inner-container">
 
       <div class="user-input">
-        <span ><p>DAY</p><input class="" placeholder="DD" type="number" required><i>This field is required</i></span>
-        <span><p>MONTH</p><input class="month-input" placeholder="MM" type="number"><i>This field is required</i> </span>
-        <span><p>YEAR</p><input class="year-input" placeholder="YYYY" type="number"><i>This field is required</i></span>
+        <span ><p>DAY</p><input class="" min="1" max="31"  maxlength="2"  placeholder="DD" type="number" required><i>This field is required</i></span>
+        <span><p class="month-input">MONTH</p><input min="1" max="12" maxlength="2" class="month-input" placeholder="MM" type="number"><i class="month-input">This field is required</i> </span>
+        <span><p class="month-input">YEAR</p><input class="year-input"  maxlength="4"  placeholder="YYYY" type="number"><i class="month-input">This field is required</i></span>
 
   
       </div>
@@ -50,22 +50,11 @@
 
   </div>
 
-  Day
-  DD
 
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ayilara Richard</a>.
   </div>
 </body>
 </html>

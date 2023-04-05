@@ -38,6 +38,10 @@ display: flex;
 padding-bottom: 4vh;
 
 }
+.user-input{
+    
+    
+    }
 .user-input span{
     display: flex;
     justify-content: center;
@@ -49,11 +53,15 @@ input{
     padding: 2%;
     border:1px solid hsl(0, 0%, 86%);
     border-radius: 9%;
+    font-weight: 800;
+    font-size: 0.5em;
+    padding-left: 0.8em;
 }
 input::placeholder{
     font-weight: 800;
     color:   hsl(0, 1%, 44%);
     padding: 0.50rem;
+    padding-left: 0.19em;
 }
 
 p{
@@ -61,15 +69,18 @@ p{
     font-family: sans-serif;
     font-weight: 800;
     line-height: 0;
+    color:hsl(0, 0%, 65%) 
     
 }
 
 i{
-    font-size: 0.3em;
+    font-size: 0.285em;
     white-space: nowrap;
     font-family: sans-serif;
     line-height: 0;
+    margin-top: 15%;
 }
+
 
 
 
@@ -132,7 +143,8 @@ hr{
     border-radius: 50%;
     width: 1.7em;
     padding: 22%;
-    margin-top: 70%;
+    margin-top: 140%;
+
 
 }
 
