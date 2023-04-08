@@ -7,9 +7,6 @@
  box-sizing: border-box;
 
 }
-/* html {
-    font-size: calc(25px + 0.390625vw);
-} */
 
 .container{
     width: 100vw;
@@ -30,7 +27,6 @@
 }
 .inner-container{
     width: 65vw;
-
 }
 
 .user-input{
@@ -38,10 +34,7 @@ display: flex;
 padding-bottom: 4vh;
 
 }
-.user-input{
-    
-    
-    }
+
 .user-input span{
     display: flex;
     justify-content: center;
@@ -57,20 +50,39 @@ input{
     font-size: 0.5em;
     padding-left: 0.8em;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:hover{
+    border:1px solid hsl(0, 2%, 68%);
+}
+
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
 input::placeholder{
     font-weight: 800;
     color:   hsl(0, 1%, 44%);
     padding: 0.50rem;
     padding-left: 0.19em;
 }
+.red {
+    color: red;
+    border-color: red;
+  }
 
 p{
     font-size: 0.3em;
     font-family: sans-serif;
     font-weight: 800;
     line-height: 0;
-    color:hsl(0, 0%, 65%) 
-    
+    color:hsl(0, 0%, 65%);
 }
 
 i{
@@ -79,13 +91,11 @@ i{
     font-family: sans-serif;
     line-height: 0;
     margin-top: 15%;
+    color: red;
 }
-
-
-
-
-
-
+.error {
+    border: 1px solid red;
+}
 
 hr{
     color:hsl(0, 0%, 86%) ;
@@ -97,10 +107,6 @@ hr{
 .year-input{
     margin-left: 0.50rem;
 }
-
-
-
-
 
 .main-output-container{
     display: flex;
@@ -121,12 +127,7 @@ hr{
     font-family: 'Poppins', sans-serif;
     line-height: 0;
     position:sticky;
-
-    
-   
 }
-
-
 
 .output{
    color: hsl(259, 100%, 65%);
@@ -137,18 +138,17 @@ hr{
 }
 
 
-
 .send-button-container img{
     background-color: hsl(259, 100%, 65%);
     border-radius: 50%;
     width: 1.7em;
     padding: 22%;
     margin-top: 140%;
-
-
 }
 
 .send-button-container a{
-    width: 100%;
-    
+    width: 100%;  
+}
+.send-button-container img:hover{
+    background-color: black; 
 }

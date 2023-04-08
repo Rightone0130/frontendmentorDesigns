@@ -21,24 +21,24 @@
     <div class="inner-container">
 
       <div class="user-input">
-        <span ><p>DAY</p><input class="" min="1" max="31"  maxlength="2"  placeholder="DD" type="number" required><i>This field is required</i></span>
-        <span><p class="month-input">MONTH</p><input min="1" max="12" maxlength="2" class="month-input" placeholder="MM" type="number"><i class="month-input">This field is required</i> </span>
-        <span><p class="month-input">YEAR</p><input class="year-input"  maxlength="4"  placeholder="YYYY" type="number"><i class="month-input">This field is required</i></span>
+        <span ><p class="error-message">DAY</p><input class="" id="dob-day" name="dob-day"  min="1" max="31"  maxlength="2"  placeholder="DD" type="number" onkeyup="dayValidation()" required><i id="day-error" class="error-msg"> </i></span>
+        <span><p class="month-input">MONTH</p><input id="dob-month" name="dob-month" min="1" max="12" pattern="(0[1-9]|1[0-2])" maxlength="2" onkeyup="monthValidation()"  class="month-input" placeholder="MM" type="number"><i class="error-msg" id="month-error"  style="display: inline-block; margin-left: 0.5rem;"></i> </span>
+        <span><p class="year-input">YEAR</p><input class="year-input"  id="dob-year" name="dob-year" maxlength="4"  placeholder="YYYY" onkeyup="yearValidation()" type="number"><i class="year-input" id="year-error" class="error-msg" style="display: inline-block;" ></i></span>
 
   
       </div>
       <hr color="" >
   
       <div class="main-output-container">
-        <span><h1 class="output" >- -</h1><h1>years</h1></span> <br>
-       <span><h1 class="output">- -</h1> <h1>months</h1></span><br>
-       <span><h1 class="output">- -</h1><h1>days</h1></span> <br>
+        <span><h1 class="output" id="years">- -</h1> <h1 >years</h1></span> <br>
+       <span><h1 class="output" id="months">- -</h1> <h1>months</h1></span><br>
+       <span><h1 class="output" id="days">- -</h1> <h1>days</h1></span> <br>
        
       </div>
   
     </div>
     <div class="send-button-container">
-      <a href=""><img src="assets/images/icon-arrow.svg"  alt=""></a>
+      <a onclick="return calculateAge()" type="submit"><img  src="assets/images/icon-arrow.svg"  alt=""></a>
   
     </div>
 
@@ -56,5 +56,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Ayilara Richard</a>.
   </div>
+
+  <script src="calc.js"></script>
 </body>
 </html>
