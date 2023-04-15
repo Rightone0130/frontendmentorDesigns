@@ -21,7 +21,7 @@
     <div class="inner-container">
 
       <div class="user-input">
-        <span ><p class="error-message">DAY</p><input class="" id="dob-day" name="dob-day"  min="1" max="31"  maxlength="2"  placeholder="DD" type="number" onkeyup="dayValidation()" required><i id="day-error" class="error-msg"> </i></span>
+        <span ><p id="error-message">DAY</p><input class="" id="dob-day" name="dob-day"  min="1" max="31"  maxlength="2"  placeholder="DD" type="number" onkeyup="dayValidation()" required><i id="day-error" class="error-msg"> </i></span>
         <span><p class="month-input">MONTH</p><input id="dob-month" name="dob-month" min="1" max="12" pattern="(0[1-9]|1[0-2])" maxlength="2" onkeyup="monthValidation()"  class="month-input" placeholder="MM" type="number"><i class="error-msg" id="month-error"  style="display: inline-block; margin-left: 0.5rem;"></i> </span>
         <span><p class="year-input">YEAR</p><input class="year-input"  id="dob-year" name="dob-year" maxlength="4"  placeholder="YYYY" onkeyup="yearValidation()" type="number"><i class="year-input" id="year-error" class="error-msg" style="display: inline-block;" ></i></span>
 

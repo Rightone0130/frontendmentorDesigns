@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="container">
+        <div class="left-section">
+            <nav>
+                <img src="images/image.png" width=20 alt="" >
+                <a href="">Standard</a>
+            </nav>
+            <section>
+                <div class="calc-section">
+                    <div class="output-section">
+                        <div>
+                            <!-- <input class="output" type="text" id="result" class="input-box" disabled> -->
+                        <input placeholder="0" class="output" type="text" id="result" class="input-box" disabled>
+    
+                        </div>
+                    </div>
+                    <div class="input-section">
+                        <div class="col-1 col">
+                        <span class="input-btn" id="percent">&#37;</span>
+                        <span class="input-btn" onclick="clearResult()" id="ce">CE</span>
+                        <span class="input-btn" onclick="clearResult()" id="c">C</span>
+                        <span class="input-btn" onclick="deleteLastCharacter()" id="del">&#9003;</span>
+                        <span class="input-btn" onclick="appendCharacter('/')" id="divison">&#247;</span>
+                        </div>
+
+                        <div class="col-2 col">
+                        <span class="input-btn" id="squ-rt">&#8730;</span>
+                        <span class="input-btn white-btn" onclick="appendCharacter('7')" id="seven">7</span>
+                        <span class="input-btn white-btn" onclick="appendCharacter('8')" id="eight">8</span>
+                        <span class="input-btn white-btn" onclick="appendCharacter('9')" id="nine">9</span> 
+                        <span class="input-btn" onclick="appendCharacter('*')" id="multi">&#215;</span> 
+                        </div>
+                        
+                        <div class="col-3 col">
+                        <span class="input-btn" id="x-squr">&#x2093; &#178;</span>
+                        <span class="input-btn white-btn" onclick="appendCharacter('4')" id="four">4</span>
+                        <span class="input-btn white-btn" onclick="appendCharacter('5')" id="five">5</span>
+                        <span class="input-btn white-btn" onclick="appendCharacter('6')" id="six">6</span>
+                        <span class="input-btn" onclick="appendCharacter('-')" id="minus">&#8722;</span> 
+                        </div>
+                        
+                        <div class="col-4 col">
+                        <span class="input-btn" id="x-cube">&#x2093;&#179;</span>
+                        <span class="input-btn white-btn" onclick="appendCharacter('1')" id="one">1</span>
+                        <span class="input-btn white-btn" onclick="appendCharacter('2')" id="two">2</span>
+                        <span class="input-btn white-btn" onclick="appendCharacter('3')" id="three">3</span>
+                        <span class="input-btn" onclick="appendCharacter('+')" id="plus">&#43;</span> 
+                        </div>
+                        
+                        <div class="col-5 col">
+                        <span class="input-btn" id="oneOverX">&#185;/&#x2093;</span>
+                        <span class="input-btn" id="plus-minus">&#177;</span>
+                        <span class="input-btn white-btn" onclick="appendCharacter('0')" id="zero">0</span>
+                        <span class="input-btn" onclick="appendCharacter('.')" id="dot">.</span>
+                        <span class="input-btn" onclick="calcResult()" id="equals">&#61;</span>
+
+                        </div>
+                    </div>
+    
+                </div>
+               
+        </div>
+
+        <div class="right-section">
+            <nav>
+            <a class="history" onclick="floatLeft()" id="history" >History</a>
+            <a class="memory" onclick="floatRight()" id="memory" >Memory</a>
+            
+            </nav>
+            <div class="hr-container">
+                <hr id="myHr" class="float-left">
+            </div>
+
+            </div>
+        </section>
+        <div>
+        </div>
+    </section>
+    <script src="calc.js"></script>
+</body>
+</html>

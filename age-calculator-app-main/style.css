@@ -50,6 +50,16 @@ input{
     font-size: 0.5em;
     padding-left: 0.8em;
 }
+.inpute{
+    height:6vh;
+    width:7vw;
+    padding: 2%;
+    border:1px solid red
+    border-radius: 9%;
+    font-weight: 800;
+    font-size: 0.5em;
+    padding-left: 0.8em;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

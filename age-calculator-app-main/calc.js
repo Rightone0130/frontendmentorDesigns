@@ -5,6 +5,8 @@ let submitError = document.getElementById("This field is required");
 try {
   function dayValidation() {
     let day = document.getElementById("dob-day").value;
+    let dey = document.getElementById("dob-day");
+    let err = dayError.innerHTML = `Must be a valid day`;
     try {
       if (day.length == 0) {
         dayError.innerHTML = "This field is required";
@@ -12,23 +14,27 @@ try {
         return false;
       }
       if (day <= 0 || day > 31) {
-        dayError.innerHTML = "Must be a valid day";
+        err;
+        
         return false;
       }
     } catch (error) {
       dayError.innerHTML = "";
     }
-
+    
     return true;
   }
   function monthValidation() {
     let month = document.getElementById("dob-month").value;
+    
     try {
       if (month.length == 0) {
+
         monthError.innerHTML = "This field is required";
         throw new Error(false);
       }
       if (month <= 0 || month > 12) {
+       
         monthError.innerHTML = "Must be a valid month";
 
         return false;
